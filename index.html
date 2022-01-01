@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        Etch-a-Sketch
+    </header>
+    <div class="content">
+        
+        <div class="options">
+            <input id="color-input" type="color" value="#333333" onchange="changeColor(this.value);">
+            <button id="color-mode">Color Mode</button>
+            <button id="rainbow-mode">Rainbow</button>
+            <button id="eraser-mode">Eraser</button>
+            <button id="clear">Clear</button>
+            <div class="size-input">
+                <p id="canv-size-display">16 x 16</p>
+                <input id="canv-size" type="range" min="1" max="64" value="16" onchange="updateCanvSize(this.value);">
+            </div>
+        </div>
+
+        <div class="canvas">
+        </div>
+    </div>
+    <footer>
+        Copyright © 2022 Dan 
+        <a href="https://github.com/pongpatapee/Odin-RockPaperscissor-JS"><img src="images/github-logo.png" alt="GitHub" height="auto" width="20"></a>
+    </footer>
+</body>
+</html>
